@@ -1,728 +1,429 @@
-/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-html {
-  font-size: 87.5%;
-  line-height: 1.2857142857em;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,700");
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\000038}}
 body {
-  margin: 0; }
-
-/**
- * Add the correct display in IE 9-.
- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  line-height: 1.2857142857em;
-  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  margin: 0.6428571429em 0; }
-
-h2 {
-  font-size: 1.5em;
-  line-height: 1.7142857143em;
-  margin: 0.8571428571em 0; }
-
-h3 {
-  font-size: 1.17em;
-  line-height: 2.1978021978em;
-  margin: 1.0989010989em 0; }
-
-h4 {
-  font-size: 1em;
-  line-height: 1.2857142857em;
-  margin: 1.2857142857em 0; }
-
-h5 {
-  font-size: 0.83em;
-  line-height: 1.5490533563em;
-  margin: 1.5490533563em 0; }
-
-h6 {
-  font-size: 0.67em;
-  line-height: 1.9189765458em;
-  margin: 1.9189765458em 0; }
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Set 1 unit of vertical rhythm on the top and bottom margin.
- */
-blockquote {
-  margin: 1.2857142857em 40px; }
-
-dl,
-ol,
-ul {
-  margin: 1.2857142857em 0; }
-
-/**
- * Turn off margins on nested lists.
- */
-ol ol,
-ol ul,
-ul ol,
-ul ul {
-  margin: 0; }
-
-dd {
-  margin: 0 0 0 40px; }
-
-ol,
-ul {
-  padding: 0 0 0 40px; }
-
-/**
- * Add the correct display in IE 9-.
- */
-figcaption,
-figure {
-  display: block; }
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-  margin: 1.2857142857em 40px; }
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
-/**
- * Add the correct display in IE.
- */
-main {
-  display: block; }
-
-/**
- * Set 1 unit of vertical rhythm on the top and bottom margin.
- */
-p,
-pre {
-  margin: 1.2857142857em 0; }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/* Links
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */ }
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-  font-weight: inherit; }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-dfn {
-  font-style: italic; }
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-  background-color: #ff0;
-  color: #000; }
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-  display: inline-block; }
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-img {
-  border-style: none; }
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.2857142857em;
-  /* 1 */
   margin: 0;
-  /* 2 */ }
-
-/**
- * Show the overflow in IE.
- */
-button {
-  overflow: visible; }
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */ }
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  /**
-   * Remove the inner border and padding in Firefox.
-   */
-  /**
-   * Restore the focus styles unset by the previous rule.
-   */ }
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0; }
-  button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText; }
-
-/**
- * Show the overflow in Edge.
- */
-input {
-  overflow: visible; }
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-  /**
-   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
-   */ }
-  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none; }
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em; }
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  color: inherit;
-  /* 2 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-textarea {
-  overflow: auto; }
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE, and Firefox.
- */
-details {
-  display: block; }
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item; }
-
-/*
- * Add the correct display in IE 9-.
- */
-menu {
-  display: block;
-  /*
-   * 1. Set 1 unit of vertical rhythm on the top and bottom margin.
-   * 2. Set consistent space for the list style image.
-   */
-  margin: 1.2857142857em 0;
-  /* 1 */
-  padding: 0 0 0 40px;
-  /* 2 */
-  /**
-   * Turn off margins on nested lists.
-   */ }
-  menu menu, ol menu, ul menu {
-    margin: 0; }
-
-/* Scripting
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-  display: inline-block; }
-
-/**
- * Add the correct display in IE.
- */
-template {
-  display: none; }
-
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none; }
-
-html, body {
+  background-color: #111;
+  color: #b3b3b3;
   font-family: 'Roboto', sans-serif;
-  color: #555; }
+  line-height: 1.7;
+  font-size: 14px; }
 
-* {
-  box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000316}}
+.hello {
+  font-size: 6em;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: -30%;
+  opacity: 0.8;
+  line-height: 0.7;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-family: 'Playfair Display', serif; }
 
-a {
-  text-decoration: none; }
-
-a {
-  color: #f8b500; }
-
-.container {
-  margin: 50px 150px;
-  border: 1px solid #eee;
-  box-shadow: 2px 2px 10px #eee; }
-
-.m-0 {
-  margin: 0; }
-
-.mt-10 {
-  margin-top: 10px; }
-
-.ml--20 {
-  margin-left: -20px; }
-
-.mb-10 {
-  margin-bottom: 10px; }
-
-.mb-20 {
-  margin-bottom: 20px; }
-
-.ml-10 {
-  margin-left: 10px; }
-
-.m-10 {
-  margin: 10px; }
-
-.mx-10 {
-  margin-left: 10px;
-  margin-right: 10px; }
-
-.px-10 {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.p-30 {
-  padding: 30px; }
-
-.pr-10 {
-  padding-right: 10px; }
-
-.pr-20 {
-  padding-right: 20px; }
-
-.pl-10 {
-  padding-left: 10px; }
-
-.pl-20 {
-  padding-left: 20px; }
-
-.w-80px {
-  width: 80px; }
-
-.w-16 {
-  width: 16.66666%; }
-
-.text-muted {
-  color: #aaa; }
-
-.small {
-  font-size: 85%; }
-
-.border-right {
-  border-right: 1px solid #ccc; }
-
-.text-normal {
-  font-weight: normal; }
-
-.text-lighter {
-  font-weight: lighter; }
-
-.text-bolder {
-  font-weight: bolder; }
-
-.text-uppercase {
-  text-transform: uppercase; }
-
-.w-50 {
-  width: 50%; }
-
-.w-30 {
-  width: 30%; }
-
-.d-flex {
-  display: flex; }
-
-.flex-wrap {
-  flex-wrap: wrap; }
-
-.f-grow {
-  flex-grow: 1; }
-
-.text-center {
-  text-align: center; }
-
-.border-circle {
-  border: 1px solid #ccc;
-  border-radius: 50%; }
-
-svg.border-circle {
-  fill: #777; }
-
-section header {
-  margin-top: 40px; }
-  section header h2 {
-    font-size: 1.1em;
-    color: #555;
-    font-weight: normal;
-    margin-bottom: 20px;
-    color: #f8b500; }
-    section header h2:after {
-      content: "";
-      display: block;
-      width: 70%;
-      height: 1px;
-      background: #ccc; }
-
-section.education article {
-  position: relative;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000328}}
+header {
   padding: 20px 0px; }
-  section.education article > div {
-    padding-left: 20px;
-    position: relative; }
-    section.education article > div:before {
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 50px;
-      background-color: #555;
-      border: 3px solid white;
-      position: absolute;
-      left: -7px;
-      top: 50%;
-      transform: translateY(-50%); }
-  section.education article:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #555;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000332}}
+.socialmedia a {
+  display: inline-block;
+  margin-right: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000335}}
+  .socialmedia a svg {
+    width: 13px;
+    height: 13px;
+    fill: #b3b3b3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000341}}
+  .socialmedia a.instagram:hover svg, .socialmedia a.instagram:focus svg {
+    fill: #c13584; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000346}}
+  .socialmedia a.linkedin:hover svg, .socialmedia a.linkedin:focus svg {
+    fill: #00a0dc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000351}}
+  .socialmedia a.github:hover svg, .socialmedia a.github:focus svg {
+    fill: #f5f5f5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000358}}
+.menu svg {
+  width: 20px;
+  height: 20px;
+  fill: #b3b3b3; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000365}}
+section.top {
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.7973564426)), to(rgba(0, 0, 0, 0.0466561625)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7973564426) 10%, rgba(0, 0, 0, 0.0466561625) 100%); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000369}}
+.my-image {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000371}}
+  .my-image img.back {
+    -webkit-filter: contrast(1.005) brightness(0.7) blur(1.5px) sepia(0.5);
+            filter: contrast(1.005) brightness(0.7) blur(1.5px) sepia(0.5);
+    opacity: .6;
     position: absolute;
     top: 0;
     left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000378}}
+  .my-image img.clip {
+    -webkit-filter: contrast(1.005) brightness(0.7) blur(0px) sepia(0.5);
+            filter: contrast(1.005) brightness(0.7) blur(0px) sepia(0.5);
+    visibility: hidden;
+    -webkit-transition: -webkit-clip-path 500ms ease-out;
+    transition: -webkit-clip-path 500ms ease-out;
+    transition: clip-path 500ms ease-out;
+    transition: clip-path 500ms ease-out, -webkit-clip-path 500ms ease-out;
+    -webkit-clip-path: circle(10% at var(--offsetX) var(--offsetY));
+            clip-path: circle(10% at var(--offsetX) var(--offsetY)); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000385}}
+  .my-image.active img.clip {
+    visibility: visible; }
 
-section.certificates svg {
-  width: 100%;
-  height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000390}}
+img.signature {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  opacity: .8;
+  width: 110px;
+  margin-bottom: 20px; }
 
-section.hobbies .border-circle {
-  height: 100px;
-  width: 100px;
-  padding-top: 20px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000396}}
+.about {
+  min-height: 230px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\0000398}}
+  .about h1 {
+    font-weight: 300;
+    font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003103}}
+.scroll {
+  font-size: .7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  color: #da950b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003111}}
+.scroll-down {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  color: #c7c4b8;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.line {
-  margin-top: -30px;
-  height: 150px;
-  width: 1px;
-  background: #ccc;
-  display: inline-block;
-  position: relative; }
-  .line.tall {
-    height: 200px; }
-  .line:before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50px;
-    background-color: #777;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003122}}
+.scroll-down.svg svg {
+  width: 15px;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s; }
 
-.no {
-  font-size: 4.5em;
-  height: 50px;
-  line-height: 50px;
-  font-weight: 500; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003131}}
+.scroll-down.svg .stroke {
+  stroke: #ADA99D; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003134}}
+.scroll-down.svg .scroller {
+  fill: #ADA99D;
+  -webkit-animation: updown 1s infinite;
+  animation: updown 1s infinite; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003142}}
+section.about {
+  margin: 5% 0px;
+  padding: 3% 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003147}}
+section.what img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  height: 250px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  border-radius: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003154}}
+section.what .d-flex:not(.dir-row-reverse):hover img, section.what .d-flex:not(.dir-row-reverse):focus img {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003159}}
+section.what .d-flex:not(.dir-row-reverse):hover div > h2, section.what .d-flex:not(.dir-row-reverse):focus div > h2 {
+  -webkit-transform: translateX(120px);
+          transform: translateX(120px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003162}}
+section.what .d-flex:not(.dir-row-reverse) .heading-2 {
+  margin-left: -120px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003166}}
+section.what .d-flex:not(.dir-row-reverse) img {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  opacity: .8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003171}}
+section.what .dir-row-reverse {
+  text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003173}}
+  section.what .dir-row-reverse:hover img, section.what .dir-row-reverse:focus img {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003178}}
+  section.what .dir-row-reverse:hover div > h2, section.what .dir-row-reverse:focus div > h2 {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003181}}
+  section.what .dir-row-reverse .heading-2 {
+    margin-right: -120px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003185}}
+  section.what .dir-row-reverse img {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+    opacity: .8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003190}}
+section.what article {
+  margin: 80px 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003192}}
+  section.what article div {
+    position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003199}}
+.skills article .text-right {
+  direction: rtl; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003204}}
+section.hobbies {
+  margin: 0px 0px 10% 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003206}}
+  section.hobbies .border-circle {
+    height: 100px;
+    width: 100px;
+    padding-top: 25px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003213}}
+    section.hobbies .border-circle img {
+      height: 25px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003218}}
+.section-icon {
+  fill: #e6e6e6;
+  width: 90px;
+  height: 90px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003224}}
+section.credit {
+  margin: 5% 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003226}}
+  section.credit img.height {
+    height: 30px;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003230}}
+  section.credit img.medium {
+    height: 20px;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003234}}
+  section.credit img.width {
+    width: 100px;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003238}}
+  section.credit img.invert {
+    -webkit-filter: invert(1) opacity(0.7);
+            filter: invert(1) opacity(0.7); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003241}}
+  section.credit img {
+    margin: 0px 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003246}}
 .circle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.1);
   display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003252}}
   .circle.fill {
-    background-color: #aaa; }
+    background-color: #da950b; }
 
-.chart-text {
-  /*font: 16px/1.4em "Montserrat", Arial, sans-serif;*/
-  fill: #000;
-  -moz-transform: translateY(0.25em);
-  -ms-transform: translateY(0.25em);
-  -webkit-transform: translateY(0.25em);
-  transform: translateY(0.25em); }
+/*Utility Classes*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003258}}
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.chart-number {
-  font-size: 5px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003261}}
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003264}}
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003267}}
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003270}}
+.direction-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003273}}
+.dir-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003276}}
+.img-responsive {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003279}}
+.h-100 {
+  height: 100vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003282}}
+.relative {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003285}}
+.w-50 {
+  width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003288}}
+.w-40 {
+  width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003291}}
+.w-60 {
+  width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003294}}
+.w-30 {
+  width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003297}}
+.ml-40 {
+  margin-left: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003300}}
+.mb-10 {
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003303}}
+.m-10 {
+  margin: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003306}}
+.m-0 {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003309}}
+.mx-auto {
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003312}}
+.color-light {
+  color: #e6e6e6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003315}}
+.text-center {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003318}}
+.heading-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  margin: 0;
+  background-color: #111; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003326}}
+  .heading-1:before {
+    content: '';
+    width: 200%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    z-index: -1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003338}}
+.heading-2 {
+  font-size: 2.5em;
+  margin-bottom: 0;
   line-height: 1;
-  text-anchor: middle;
-  text-transform: uppercase;
-  -moz-transform: translateY(-0.25em);
-  -ms-transform: translateY(-0.25em);
-  -webkit-transform: translateY(-0.25em);
-  transform: translateY(-0.25em); }
+  color: #da950b; }
 
-.chart-label {
-  font-size: 2.3px;
-  text-anchor: middle;
-  fill: #ccc;
-  -moz-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003344}}
+.text-right {
+  text-align: right; }
 
-figure {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  margin-left: -15px;
-  margin-right: -15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003347}}
+.small {
+  font-size: 85%; }
 
-@media (min-width: 768px) {
-  figure {
-    flex-direction: row; } }
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Data\/My\%20works\/my\%20own\/styles\.scss}line{font-family:\00003354}}
+  .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+/* iPads (portrait and landscape) ----------- */
+/* Desktops and laptops ----------- */
+/*Animations*/
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes updown {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
 
 /*# sourceMappingURL=styles.css.map */
